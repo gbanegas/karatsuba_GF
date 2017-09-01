@@ -1,0 +1,51 @@
+
+*** Running vivado
+    with args -log clk_wiz_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source clk_wiz_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1159.273 ; gain = 60.996 ; free physical = 747 ; free virtual = 3352
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/home/user/fpga_projects/src/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [/home/user/fpga_projects/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:14470]
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:14470]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20759]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20759]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [/home/user/fpga_projects/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (5#1) [/home/user/fpga_projects/src/clk_wiz_0/clk_wiz_0.v:70]
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1199.773 ; gain = 101.496 ; free physical = 822 ; free virtual = 3427
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1199.773 ; gain = 101.496 ; free physical = 813 ; free virtual = 3418
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1429.156 ; gain = 0.000 ; free physical = 767 ; free virtual = 3372
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1429.156 ; gain = 330.879 ; free physical = 767 ; free virtual = 3372
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1429.156 ; gain = 330.879 ; free physical = 767 ; free virtual = 3372
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1429.156 ; gain = 330.879 ; free physical = 768 ; free virtual = 3373
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1429.156 ; gain = 330.879 ; free physical = 769 ; free virtual = 3374
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1429.156 ; gain = 330.879 ; free physical = 768 ; free virtual = 3373
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1457.156 ; gain = 358.879 ; free physical = 778 ; free virtual = 3383
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1457.156 ; gain = 358.879 ; free physical = 778 ; free virtual = 3383
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1467.172 ; gain = 368.895 ; free physical = 778 ; free virtual = 3383
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.172 ; gain = 368.895 ; free physical = 778 ; free virtual = 3383
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.172 ; gain = 368.895 ; free physical = 778 ; free virtual = 3383
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.172 ; gain = 368.895 ; free physical = 778 ; free virtual = 3383
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.172 ; gain = 368.895 ; free physical = 778 ; free virtual = 3383
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.172 ; gain = 368.895 ; free physical = 778 ; free virtual = 3383
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.172 ; gain = 368.895 ; free physical = 778 ; free virtual = 3383
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |MMCME2_ADV |     1|
+|3     |IBUF       |     1|
++------+-----------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.172 ; gain = 368.895 ; free physical = 778 ; free virtual = 3383
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1472.172 ; gain = 386.480 ; free physical = 796 ; free virtual = 3401

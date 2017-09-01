@@ -35,7 +35,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity MultiWraper is
 --  Port ( );
-generic (M: INTEGER:= 163);
+generic (M: INTEGER:= 283);
 PORT ( CLK: IN STD_LOGIC;
        RSTN : IN STD_LOGIC;
        SET : IN STD_LOGIC;
@@ -50,20 +50,19 @@ end MultiWraper;
 
 ARCHITECTURE Behavioral OF MultiWraper IS
 
-COMPONENT polynom_multiplier
+COMPONENT karatsuba_multiplier
 generic (M: integer:= 163);
 port (
     CLK: IN STD_LOGIC;
-  a, b: in std_logic_vector(M-1 downto 0);
-  
+    a, b: in std_logic_vector(M-1 downto 0);
   d: out std_logic_vector(2*M-2 downto 0)
 );
 end component;
 
 COMPONENT reduction
 generic (M: INTEGER:= 163;
-         BL: INTEGER:= 63;
-         CL: INTEGER:= 37);
+         BL: INTEGER:= 108;
+         CL: INTEGER:= 47);
 port(
    CLK: IN STD_LOGIC;
    RSTN : IN STD_LOGIC; 
@@ -79,7 +78,7 @@ SIGNAL RESULT_REG: STD_LOGIC_VECTOR (M-1 DOWNTO 0);
 
 BEGIN
 
-    MULT: polynom_multiplier 
+    MULT: karatsuba_multiplier 
     GENERIC MAP ( M => M)
     PORT MAP(
         CLK => CLK,
@@ -102,20 +101,23 @@ BEGIN
                  if(SET = '1') THEN
                 case SEL is
                   when "001" =>   
-                   A(31 DOWNTO 0)            <= IN0; --& A(6 DOWNTO 32);Z <= A;
-                   B(31 DOWNTO 0)            <= IN1; --& B(255 DOWNTO 32);
+                   A(31 DOWNTO 0)            <= IN0; 
+                   B(31 DOWNTO 0)            <= IN1; 
                   when "010" =>   
-                  A(63 DOWNTO 32)            <= IN0; --& A(6 DOWNTO 32);Z <= A;
-                  B(63 DOWNTO 32)            <= IN1; --& B(255 DOWNTO 32);
+                  A(63 DOWNTO 32)            <= IN0; 
+                  B(63 DOWNTO 32)            <= IN1; 
                   when "011" =>   
-                  A(95 DOWNTO 64)            <= IN0; --& A(6 DOWNTO 32);Z <= A;
-                  B(95 DOWNTO 64)            <= IN1; --& B(255 DOWNTO 32);
+                  A(95 DOWNTO 64)            <= IN0; 
+                  B(95 DOWNTO 64)            <= IN1; 
                   when "100" =>   
-                  A(127 DOWNTO 96)            <= IN0; --& A(6 DOWNTO 32);Z <= A;
-                  B(127 DOWNTO 96)            <= IN1; --& B(255 DOWNTO 32);
+                  A(127 DOWNTO 96)            <= IN0;
+                  B(127 DOWNTO 96)            <= IN1;
                   when "101" =>   
-                  A(155 DOWNTO 128)            <= IN0(27 DOWNTO 0); --& A(6 DOWNTO 32);Z <= A;
-                  B(155 DOWNTO 128)            <= IN1(27 DOWNTO 0); --& B(255 DOWNTO 32);
+                  A(159 DOWNTO 128)            <= IN0;
+                  B(159 DOWNTO 128)            <= IN1;
+                  when "111" =>   
+                  A(191 DOWNTO 160)            <= "00000000000000000000000000000" & IN0(2 DOWNTO 0);
+                  B(191 DOWNTO 160)            <= "00000000000000000000000000000" & IN1(2 DOWNTO 0);
                   when others => 
                   A            <= A;
                   B            <= B;
@@ -141,7 +143,9 @@ BEGIN
                          when "100" =>   
                          OUT0            <= RESULT_REG(127 DOWNTO 96)   ; --& A(6 DOWNTO 32);Z <= A;
                          when "101" =>   
-                         OUT0            <= "0000" & RESULT_REG(155 DOWNTO 128); --& A(6 DOWNTO 32);Z <= A;
+                         OUT0            <= RESULT_REG(159 DOWNTO 128); --& A(6 DOWNTO 32);Z <= A;
+                         when "111" =>   
+                         OUT0            <= "00000000000000000000000000000" & RESULT_REG(162 DOWNTO 160); --& A(6 DOWNTO 32);Z <= A;
                          when others => 
                          OUT0            <= (OTHERS => '0');
                        end case;

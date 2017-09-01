@@ -1,0 +1,164 @@
+
+*** Running vivado
+    with args -log microblaze_mcs_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source microblaze_mcs_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source microblaze_mcs_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1179.301 ; gain = 70.996 ; free physical = 769 ; free virtual = 3374
+INFO: [Synth 8-638] synthesizing module 'microblaze_mcs_0' [/home/user/fpga_projects/src/microblaze_mcs_0/synth/microblaze_mcs_0.v:60]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:13]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_dlmb_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_3/synth/bd_fc5c_0_dlmb_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'FDS' [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'FDS' (1#1) [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (2#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_dlmb_0' (3#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_3/synth/bd_fc5c_0_dlmb_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_dlmb_cntlr_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/synth/bd_fc5c_0_dlmb_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr_v4_0_12_pselect_mask' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr_v4_0_12_pselect_mask' (4#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (5#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (6#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_dlmb_cntlr_0' (7#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/synth/bd_fc5c_0_dlmb_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_ilmb_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_2/synth/bd_fc5c_0_ilmb_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10__parameterized1' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10__parameterized1' (7#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_ilmb_0' (8#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_2/synth/bd_fc5c_0_ilmb_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_ilmb_cntlr_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_5/synth/bd_fc5c_0_ilmb_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr__parameterized1' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux__parameterized1' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr_v4_0_12_pselect_mask__parameterized0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr_v4_0_12_pselect_mask__parameterized0' (8#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux__parameterized1' (8#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr__parameterized1' (8#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_ilmb_cntlr_0' (9#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_5/synth/bd_fc5c_0_ilmb_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_iomodule_0_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/synth/bd_fc5c_0_iomodule_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'iomodule' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:8102]
+INFO: [Synth 8-638] synthesizing module 'iomodule_v3_1_1_pselect_mask' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:7747]
+INFO: [Synth 8-256] done synthesizing module 'iomodule_v3_1_1_pselect_mask' (10#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:7747]
+INFO: [Synth 8-638] synthesizing module 'iomodule_v3_1_1_pselect_mask__parameterized0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:7747]
+INFO: [Synth 8-256] done synthesizing module 'iomodule_v3_1_1_pselect_mask__parameterized0' (10#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:7747]
+INFO: [Synth 8-638] synthesizing module 'Iomodule_core' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:6485]
+INFO: [Synth 8-638] synthesizing module 'FIT_Module' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:1810]
+INFO: [Synth 8-256] done synthesizing module 'FIT_Module' (11#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:1810]
+INFO: [Synth 8-638] synthesizing module 'PIT_Module' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:3488]
+INFO: [Synth 8-256] done synthesizing module 'PIT_Module' (12#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:3488]
+INFO: [Synth 8-638] synthesizing module 'GPO_Module' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:2490]
+INFO: [Synth 8-256] done synthesizing module 'GPO_Module' (13#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:2490]
+INFO: [Synth 8-638] synthesizing module 'GPI_Module' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:2314]
+INFO: [Synth 8-256] done synthesizing module 'GPI_Module' (14#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:2314]
+INFO: [Synth 8-638] synthesizing module 'intr_ctrl' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:2689]
+INFO: [Synth 8-638] synthesizing module 'iomodule_v3_1_1_MB_FDR' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:969]
+INFO: [Synth 8-256] done synthesizing module 'iomodule_v3_1_1_MB_FDR' (15#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:969]
+INFO: [Synth 8-256] done synthesizing module 'intr_ctrl' (16#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:2689]
+INFO: [Synth 8-256] done synthesizing module 'Iomodule_core' (17#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:6485]
+INFO: [Synth 8-256] done synthesizing module 'iomodule' (18#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/hdl/iomodule_v3_1_vh_rfs.vhd:8102]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_iomodule_0_0' (19#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_9/synth/bd_fc5c_0_iomodule_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_lmb_bram_I_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_6/synth/bd_fc5c_0_lmb_bram_I_0.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_lmb_bram_I_0' (30#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_6/synth/bd_fc5c_0_lmb_bram_I_0.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_mdm_0_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/synth/bd_fc5c_0_mdm_0_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'MDM' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:13762]
+INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:277]
+INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (31#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:328]
+INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (32#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'MDM_Core' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:6642]
+INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:3115]
+INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:630]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (33#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:630]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:690]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (34#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:690]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_10_MB_SRL16E' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_10_MB_SRL16E' (35#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_10_MB_SRL16E__parameterized0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_10_MB_SRL16E__parameterized0' (35#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_10_MB_SRL16E__parameterized1' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_10_MB_SRL16E__parameterized1' (35#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_10_MB_SRL16E__parameterized2' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_10_MB_SRL16E__parameterized2' (35#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:759]
+INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (36#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:3115]
+INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (37#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:6642]
+INFO: [Synth 8-256] done synthesizing module 'MDM' (38#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/hdl/mdm_v3_2_vh_rfs.vhd:13762]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_mdm_0_0' (39#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_7/synth/bd_fc5c_0_mdm_0_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_microblaze_I_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_0/synth/bd_fc5c_0_microblaze_I_0.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_microblaze_I_0' (92#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_0/synth/bd_fc5c_0_microblaze_I_0.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_rst_0_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/synth/bd_fc5c_0_rst_0_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:43657]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (93#1) [/home/user/xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:43657]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (94#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (95#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (96#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (97#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (98#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_rst_0_0' (99#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_1/synth/bd_fc5c_0_rst_0_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_xlconcat_0_0' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_8/synth/bd_fc5c_0_xlconcat_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat_v2_1_1_xlconcat' [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_8/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (100#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_8/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_xlconcat_0_0' (101#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/ip/ip_8/synth/bd_fc5c_0_xlconcat_0_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0' (102#1) [/home/user/fpga_projects/src/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:13]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_mcs_0' (103#1) [/home/user/fpga_projects/src/microblaze_mcs_0/synth/microblaze_mcs_0.v:60]
+Finished RTL Elaboration : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1560.699 ; gain = 452.395 ; free physical = 766 ; free virtual = 3373
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1560.699 ; gain = 452.395 ; free physical = 735 ; free virtual = 3342
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1744.715 ; gain = 0.000 ; free physical = 776 ; free virtual = 3383
+Finished Constraint Validation : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 802 ; free virtual = 3409
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 802 ; free virtual = 3409
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 804 ; free virtual = 3411
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:27 ; elapsed = 00:01:31 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 769 ; free virtual = 3376
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:39 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 757 ; free virtual = 3363
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:01:46 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 736 ; free virtual = 3343
+Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:47 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 815 ; free virtual = 3422
+Finished Technology Mapping : Time (s): cpu = 00:01:43 ; elapsed = 00:01:49 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 816 ; free virtual = 3423
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:01:50 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 816 ; free virtual = 3422
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:50 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 816 ; free virtual = 3422
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:44 ; elapsed = 00:01:50 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 815 ; free virtual = 3422
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:44 ; elapsed = 00:01:50 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 815 ; free virtual = 3422
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:44 ; elapsed = 00:01:50 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 815 ; free virtual = 3422
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:44 ; elapsed = 00:01:50 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 815 ; free virtual = 3422
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BSCANE2  |     1|
+|2     |BUFG     |     1|
+|3     |LUT1     |    12|
+|4     |LUT2     |    82|
+|5     |LUT3     |   122|
+|6     |LUT4     |   235|
+|7     |LUT5     |   108|
+|8     |LUT6     |   175|
+|9     |LUT6_2   |    97|
+|10    |MULT_AND |     2|
+|11    |MUXCY_L  |    75|
+|12    |MUXF7    |    32|
+|13    |RAM32X1D |    64|
+|14    |RAMB36E1 |     4|
+|15    |SRL16    |     1|
+|16    |SRL16E   |    65|
+|17    |SRLC16E  |     8|
+|18    |XORCY    |    47|
+|19    |FD       |    32|
+|20    |FDCE     |   242|
+|21    |FDC_1    |     1|
+|22    |FDE      |    44|
+|23    |FDPE     |     7|
+|24    |FDR      |     9|
+|25    |FDRE     |   843|
+|26    |FDRE_1   |     1|
+|27    |FDS      |     5|
+|28    |FDSE     |    21|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:01:50 . Memory (MB): peak = 1744.715 ; gain = 636.410 ; free physical = 815 ; free virtual = 3422
+synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:01:53 . Memory (MB): peak = 1744.723 ; gain = 649.004 ; free physical = 839 ; free virtual = 3446
