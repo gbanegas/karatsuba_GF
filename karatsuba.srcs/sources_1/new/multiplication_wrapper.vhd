@@ -35,7 +35,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity MultiWraper is
 --  Port ( );
-generic (M: INTEGER:= 283);
+generic (M: INTEGER:= 163);
 PORT ( CLK: IN STD_LOGIC;
        RSTN : IN STD_LOGIC;
        SET : IN STD_LOGIC;
@@ -61,8 +61,8 @@ end component;
 
 COMPONENT reduction
 generic (M: INTEGER:= 163;
-         BL: INTEGER:= 108;
-         CL: INTEGER:= 47);
+         BL: INTEGER:= 63;
+         CL: INTEGER:= 37);
 port(
    CLK: IN STD_LOGIC;
    RSTN : IN STD_LOGIC; 
@@ -116,8 +116,8 @@ BEGIN
                   A(159 DOWNTO 128)            <= IN0;
                   B(159 DOWNTO 128)            <= IN1;
                   when "111" =>   
-                  A(191 DOWNTO 160)            <= "00000000000000000000000000000" & IN0(2 DOWNTO 0);
-                  B(191 DOWNTO 160)            <= "00000000000000000000000000000" & IN1(2 DOWNTO 0);
+                  A(162 DOWNTO 160)            <=  IN0(2 DOWNTO 0);
+                  B(162 DOWNTO 160)            <= IN1(2 DOWNTO 0);
                   when others => 
                   A            <= A;
                   B            <= B;

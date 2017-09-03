@@ -36,9 +36,9 @@ use ieee.numeric_std.all;
 
 entity reduction is
 generic (
-         M: integer:= 283;
-         BL: INTEGER:= 108;
-         CL:INTEGER:= 47
+         M: integer:= 163;
+         BL: INTEGER:= 63;
+         CL:INTEGER:= 37
          );
   Port ( 
    CLK: IN STD_LOGIC;

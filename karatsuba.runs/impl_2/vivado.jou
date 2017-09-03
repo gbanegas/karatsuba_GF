@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sat Sep  2 01:08:13 2017
-# Process ID: 6616
+# Start of session at: Sun Sep  3 16:13:20 2017
+# Process ID: 15427
 # Current directory: /home/user/fpga_projects/karatsuba/karatsuba.runs/impl_2
 # Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: /home/user/fpga_projects/karatsuba/karatsuba.runs/impl_2/top.vdi
